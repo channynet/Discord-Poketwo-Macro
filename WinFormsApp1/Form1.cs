@@ -21,6 +21,7 @@ namespace WinFormsApp1
         bool KeepMacro = true;
         char[] CatchPoketmon=new char[10000];
         string[] Pokemon = new string[100];
+        string[] catchedLegendaryPoketmon = new string[100];
         string capturedScreenString;
         int totalCatchPokemon;
         int totalLegnedaryPokemon;

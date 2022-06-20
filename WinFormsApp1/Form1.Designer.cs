@@ -33,7 +33,6 @@ namespace WinFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timerInvoke = new System.Windows.Forms.Timer(this.components);
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -63,17 +62,9 @@ namespace WinFormsApp1
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 266);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "3000";
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 266);
+            this.textBox2.Location = new System.Drawing.Point(12, 392);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 2;
@@ -81,7 +72,7 @@ namespace WinFormsApp1
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 266);
+            this.textBox3.Location = new System.Drawing.Point(125, 392);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 23);
             this.textBox3.TabIndex = 2;
@@ -115,23 +106,23 @@ namespace WinFormsApp1
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(13, 232);
+            this.textBox5.Location = new System.Drawing.Point(495, 380);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(206, 23);
+            this.textBox5.Size = new System.Drawing.Size(277, 23);
             this.textBox5.TabIndex = 5;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(539, 232);
+            this.textBox6.Location = new System.Drawing.Point(501, 307);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
+            this.textBox6.Size = new System.Drawing.Size(141, 23);
             this.textBox6.TabIndex = 6;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(262, 232);
+            this.textBox7.Location = new System.Drawing.Point(7, 237);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(212, 23);
             this.textBox7.TabIndex = 7;
@@ -139,7 +130,7 @@ namespace WinFormsApp1
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(262, 266);
+            this.textBox8.Location = new System.Drawing.Point(7, 266);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(212, 23);
             this.textBox8.TabIndex = 8;
@@ -151,7 +142,7 @@ namespace WinFormsApp1
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(673, 231);
+            this.textBox9.Location = new System.Drawing.Point(672, 307);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 23);
             this.textBox9.TabIndex = 9;
@@ -161,7 +152,7 @@ namespace WinFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 309);
+            this.ClientSize = new System.Drawing.Size(800, 427);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -171,7 +162,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -187,7 +177,6 @@ namespace WinFormsApp1
 
         private System.Windows.Forms.Timer timerInvoke;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
