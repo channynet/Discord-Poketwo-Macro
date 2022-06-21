@@ -22,6 +22,8 @@ namespace WinFormsApp1
         char[] CatchPoketmon=new char[10000];
         string[] Pokemon = new string[100];
         string[] catchedLegendaryPoketmon = new string[100];
+        string totalCatchedLegendaryPoketmon="Null";
+        int catchedLegendaryPoketmonIndex = 0;
         string capturedScreenString;
         int totalCatchPokemon;
         int totalLegnedaryPokemon;
@@ -232,8 +234,14 @@ namespace WinFormsApp1
             // }
              */
 
-            textBox7.Text = "catched pokemon : " + totalCatchPokemon;
-            textBox8.Text = "catched legendary pokemon : " + totalLegnedaryPokemon;
+            textBox7.Text = "catched pokemon count : " + totalCatchPokemon;
+            textBox8.Text = "catched legendary pokemon count : " + totalLegnedaryPokemon;
+            textBox1.Text = "catched legendary poekmon name" + totalCatchedLegendaryPoketmon;
+
+            for(int i = 0; i < catchedLegendaryPoketmonIndex; i++)
+            {
+                totalCatchedLegendaryPoketmon += catchedLegendaryPoketmon[i];
+            }
 
             // STATE MACHINE
             if (strState == "IDLE")
@@ -329,6 +337,7 @@ namespace WinFormsApp1
                     if (textBox6.Text.IndexOf(Pokemon[i]) >= 0)
                     {
                         totalLegnedaryPokemon++;
+                        catchedLegendaryPoketmon[catchedLegendaryPoketmonIndex] = textBox6.Text;
                         Thread.Sleep(1000);
                         SendKeys.Send(".favorite latest{enter}");
                     }
@@ -619,6 +628,11 @@ namespace WinFormsApp1
         }
 
         private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
