@@ -236,7 +236,7 @@ namespace WinFormsApp1
 
             textBox7.Text = "catched pokemon count : " + totalCatchPokemon;
             textBox8.Text = "catched legendary pokemon count : " + totalLegnedaryPokemon;
-            textBox1.Text = "catched legendary poekmon name" + totalCatchedLegendaryPoketmon;
+            textBox1.Text = "catched legendary poekmon name : " + totalCatchedLegendaryPoketmon;
 
             for(int i = 0; i < catchedLegendaryPoketmonIndex; i++)
             {
